@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Focus Blurred Text On Hover</title>
+   <style>
+
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1704975986930-0c09f513c985?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center fixed;
+    background-size: cover;
+}
+.wrapper h2 {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
+	font-family: montserrat;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 80px;
+	letter-spacing: 8px;
+	cursor: pointer;
+	filter: blur(10px);
+	transition: 0.7s all;
+}
+.wrapper h2:hover{
+    filter: blur(0);
+}
+   </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Blurred Text</h2>
+    </div>
+</body>
+</html>
